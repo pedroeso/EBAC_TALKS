@@ -12,11 +12,11 @@
     }
 
     &--data-science {
-        background-image: linear-gradient(variables.$pink, variables.$yellow);
+        background-image: linear-gradient(variables.$pink, variables.$blue2);
     }
 
     &--backend {
-        background-image: linear-gradient(variables.$yellow, variables.$pink);
+        background-image: linear-gradient(variables.$blue2, variables.$blue1);
     }
 
     &--image-left {
@@ -32,13 +32,14 @@
 
     &__image {
         max-width: 360px;
+        border-radius: 12px;
     }
 
     &__details {
         margin-right: 40px;
 
         &__title {
-            font-size: 18px;
+            font-size: 29px;
             font-weight: bold;
             margin-bottom: 16px;
         }

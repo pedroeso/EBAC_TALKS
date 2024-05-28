@@ -3,10 +3,20 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -2;
+    }
 
     .container {
         position: relative;
@@ -20,7 +30,8 @@
         height: 100%;
         background-color: variables.$secondaryTextColor;
         content: "";
-        opacity: 0.7;
+        opacity: 0.4;
+        z-index: -1;
     }
 
     &__text {
@@ -30,18 +41,23 @@
         line-height: 56px;
         font-weight: 800;
         text-align: center;
+        z-index: 2;
+        position: relative;
     }
+
 
     &__logo {
         margin: 0 auto;
-        height: 80px;
+        height: 170px;
         display: block;
+        z-index: 2;
+        position: relative;
     }
 
     @media (max-width: 640px) {
         padding: 40px 0;
         &__logo {
-            height: 24px;
+            height: 120px;
         }
 
         &__text {
@@ -51,3 +67,23 @@
         }
     }
 }
+
+.laranja {
+    color: variables.$textColor2;
+}
+
+.trailer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#my-video {
+    @media (max-width: 640px) {
+        width: 250;
+        height: 110;
+    }
+
+}
+

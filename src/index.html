@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Tech Talks</title>
+    <title>Black Myth: Wurong</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fonts/stkaiti.ttf">
     <link rel="stylesheet" href="styles/main.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link
+        href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+        rel="stylesheet"
+/>
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <img class="hero__logo" src="./images/black-myth-wukong-logo-1zi3u.avif" alt="Black Myth WuKong">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
+                O jogo mais esperado do ano que promete <span class="laranja">tudo</span> disponivel em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
-                        <b>Localização</b>
-                        Allianz Parque - Barra Funda - São Paulo
+                        <b>Plataformas</b>
+                        PlayStation 5, Xbox Series X e Series S e Microsoft Windows
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Preço</b>
-                        A partir de R$ 120,00
+                        A partir de R$ 350,00
                     </li>
                     <li class="infos-bar__infos__item">
                     <b>Quando</b>
@@ -35,50 +39,93 @@
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
-                    Garanta sua vaga
+                    Faça a Pré-venda!
                 </a>
             </div>
         </div>
+        <div>
+            <video autoplay muted loop class="hero__video">
+                <source src="/assets/videos/Black Myth： WuKong - Official WeGame Event Trailer.mp4" type="video/mp4">
+        </div>
+        <div class="container completo">
+            <p class="hero__text">
+                Veja o trailer <span class="laranja">completo</span><span id="contador"></span> 
+            </p>
+        </div>
+        <section class="trailer">
+            <div>
+                <video  
+                        id="my-video"
+                        class="video-js vjs-theme-city"
+                        controls
+                        preload="auto"
+                        width="820"
+                        poster="/assets/videos/wukong-capa.webp" 
+                        data-setup="{}" 
+                        >
+                        <source src="/assets/videos/Black Myth： Wukong - Official Trailer.mp4"  type="video/mp4" />
+                        <p class="vjs-no-js"></p>>
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/"></a> target="_blank"
+                            >supports HTML5 video</a
+                        >
+    </p>
+</video>
+            </div>
+        </section>
     </header>
+    
 
     <section class="event event--frontend">
         <div class="container" data-aos="fade-right">
             <div class="event__details">
-                <h2 class="event__details__title">Front-end</h2>
-                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium accusamus unde sapiente. Velit excepturi voluptatibus consequatur quo dolor, unde sint ex quod sit dolorum. Quibusdam temporibus ex rem quo.</p>
+                <h2 class="event__details__title">Acerca deste <span class="laranja">jogo</span></h2>
+                <p class="event__details__description">Black Myth: Wukong é um RPG de ação inspirado na mitologia chinesa. A história é baseada em "Jornada para o Oeste", um dos Quatro Grandes Romances Clássicos da literatura do país. Você é o Predestinado e tem a responsabilidade de encarar os desafios e as maravilhas do mundo para desvendar a verdade obscura por trás de uma lenda gloriosa do passado.</p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <img class="event__image" src="./images/sinopse.webp" alt="Front-end">
         </div>
     </section>
     <section class="event event--ux-ui event--image-left">
         <div class="container" data-aos="fade-left">
             <div class="event__details">
-                <h2 class="event__details__title">UI/UX</h2>
-                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium accusamus unde sapiente. Velit excepturi voluptatibus consequatur quo dolor, unde sint ex quod sit dolorum. Quibusdam temporibus ex rem quo.</p>
+                <h2 class="event__details__title">Explore uma infinidade de <span class="laranja">fascínios</span></h2>
+                <p class="event__details__description">Aventure-se em um mundo desconhecido e contemple novas paisagens a cada passo. Entre em um reino fascinante repleto de maravilhas e descobertas da antiga mitologia chinesa!
+                        <br/>
+                        <br/>
+                    Como o Predestinado, você verá cenários de tirar o fôlego do romance clássico "Jornada para o Oeste" e criará um novo conto épico enquanto se aventura.</p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <img class="event__image" src="./images/fascinios.jpg" alt="UI-UX">
         </div>
     </section>
     <section class="event event--data-science">
         <div class="container" data-aos="fade-right">
             <div class="event__details">
-                <h2 class="event__details__title">Data Science</h2>
-                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium accusamus unde sapiente. Velit excepturi voluptatibus consequatur quo dolor, unde sint ex quod sit dolorum. Quibusdam temporibus ex rem quo.</p>
+                <h2 class="event__details__title">Descubra tramas <span class="laranja">comoventes</span> onde menos se espera</h2>
+                <p class="event__details__description">Criaturas de todo tipo escondem uma história de vida. Por trás da ferocidade e da astúcia dos seus inimigos, há um emaranhado de eventos que define suas origens, personalidades e motivações.
+                    <br/>
+                    <br/>
+                    Como o Predestinado, você desvendará as histórias de vários personagens, indo além do confronto direto, para conhecer o motivo dos sentimentos complexos de amor, ódio, ganância e fúria que carregam consigo.</p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <img class="event__image" src="./images/tramas.webp" alt="Data science">
         </div>
     </section>
     <section class="event event--backend event--image-left">
         <div class="container" data-aos="fade-left">
             <div class="event__details">
-                <h2 class="event__details__title">Back-end</h2>
-                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium accusamus unde sapiente. Velit excepturi voluptatibus consequatur quo dolor, unde sint ex quod sit dolorum. Quibusdam temporibus ex rem quo.</p>
+                <h2 class="event__details__title">Enfrente poderosos <span class="laranja">inimigos</span> clássicos e originais</h2>
+                <p class="event__details__description">O macaco heroico, diante de força e glória, enfrenta inimigos que desafiam sua história. Uma das maiores virtudes da "Jornada para o Oeste" é a grande variedade de adversários com poderes únicos.
+                    <br/>
+                    <br/>
+                    Como o Predestinado, você enfrentará inimigos poderosos e rivais dignos no decorrer da jornada. Trave batalhas épicas em que não há chance de rendição.
+                    </p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <img class="event__image" src="./images/inimigos.jpg" alt="Back-end">
         </div>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 </body>
 </html>

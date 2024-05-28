@@ -9,10 +9,13 @@
   },
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
-    "build": "parcel build src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/watcher": "^2.4.1"
+  }
 }
